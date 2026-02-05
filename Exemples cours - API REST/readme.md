@@ -18,7 +18,9 @@ L'execution de l'app Flask se fait au niveau du terminal **WINDOWS** par les com
 Cette application **Flask** permet la gestion d'une liste d’étudiants (**Récupération**/**Ajout**/**Modification**/**Suppression**).
 
 La liste d'étudiants est représentée sous forme d'une liste de dictionnaires : 
-```students = [ {"id":1, "name":"youcef", "age":21}, {"id":2, "name":"samir", "age":41} ]```
+```
+students = [ {"id":1, "name":"youcef", "age":21}, {"id":2, "name":"samir", "age":41} ]
+```
 
 Chaque dictionnaire d'étudiant est identifié par les clés : **id**, **name**, **age**
 
