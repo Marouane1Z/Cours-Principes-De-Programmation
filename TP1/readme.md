@@ -220,7 +220,8 @@ Et Après l'éxecution de la classe **Application**, on peut accéder à notre f
 <img width="1882" height="917" alt="image" src="https://github.com/user-attachments/assets/f4a32620-e015-4a27-8c9b-844cda25d4bd" />
 
 
-
+Finalement, à l’aide de SoapUI, il est possible de tester et d’exécuter autant d’exemples que souhaité.
+La capture ci-dessous illustre un exemple d’exécution du service web convertir.
 
 
 <img width="1860" height="488" alt="image" src="https://github.com/user-attachments/assets/be9b9bb7-d723-45cc-9778-99db6bc062ab" />
