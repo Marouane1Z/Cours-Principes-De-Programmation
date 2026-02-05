@@ -1,3 +1,15 @@
 <p align="center">
-  Ce repertoire Github contient tous les travaux et ressources du cours : Principes de Programmation
+  <h1> Ce dépôt regroupe les travaux réalisés dans le cadre du module **Principes de Programmation**. </h1>
 </p>
+
+## Contenu du dépôt
+
+### TP1 – Web Services SOAP
+Ce travail porte sur la mise en place des **Web Services SOAP**, ainsi que leur test à l’aide de **SoapUI**.
+
+Pour accéder au rapport de ce TP, dirigez-vous vers le fichier **readme.md** dans ce répertoire du TP1 : "Cours-Principes-De-Programmation/TP1/readme.md" (./TP1/README.md)  [Accéder au TP1](./TP1/README.md)
+
+### Application Flask – Students & Employees
+Cette application illustre les principes des **API REST** vu en cours avec **Flask**  
+
+Pour y accéder, dirigez-vous vers le fichier **readme.md** dans du répertoire : "Cours-Principes-De-Programmation/Exemples cours - API REST/readme.md" (./Exemples cours - API REST/README.md)  [Accéder au TP1](./TP1/)
