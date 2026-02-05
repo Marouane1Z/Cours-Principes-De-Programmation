@@ -48,16 +48,15 @@ Chaque dictionnaire d'employee est identifié par les clés : **id**, **name**, 
 Les résultats sont affichés sous forme d'une table initiée comme suit : 
 
 ```html
-<h2 style='text-align:center;'>Liste des employées</h2>
-<table border='1' style='margin:auto;'>
-  <tr>
-    <th>ID</th>
-    <th>Nom</th>
-    <th>Age</th>
-    <th>Entreprise</th>
-    <th>Role</th>
-  </tr>
-</table>
+tab = ("<h2 style='text-align:center;'>Liste des employées</h2>"
+         + "<table border='1' style='margin:auto;'>"
+         + "<tr>"
+         + "<th>ID</th>"
+         + "<th>Nom</th>"
+         + "<th>Age</th>"
+         + "<th>Entreprise</th>"
+         + "<th>Role</th>"
+         + "</tr>")```
 
 Cette table s'incrémente en fonction de chaque opération qu'on va définir : (**GET**,**POST**,**PUT**,**DELETE**)
 
