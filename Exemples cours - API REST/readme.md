@@ -24,12 +24,12 @@ Chaque dictionnaire d'étudiant est identifié par les clés : **id**, **name**,
 
 L'app définit les routes suivantes : 
 
-**@app.route('/')** : racine de l'API 
-**@app.route('/students', methods=['GET'])** : Récupération de la liste des étudiants par la méthode : **GET**
-**@app.route('/students', methods=['POST'])** : Ajout d'un nouveau étudiant par la méthode : **POST**  (testé par Postman)
-**@app.route('/students/<int:id>', methods=['GET'])** : Affichage d'un étudiant en passant son **id** par la méthode **GET**
-**@app.route('/students/<int:id>', methods=['PUT'])** : Mise à jour d'un étudiant par la méthode : **PUT** (testé par Postman)
-**@app.route('/students/<int:id>', methods=['DELETE'])** : Suppression d'un étudiant par la méthode : **DELETE** (testé par Postman)
+**@app.route('/')** : racine de l'API··
+**@app.route('/students', methods=['GET'])** : Récupération de la liste des étudiants par la méthode : **GET**··
+**@app.route('/students', methods=['POST'])** : Ajout d'un nouveau étudiant par la méthode : **POST**  (testé par Postman)··
+**@app.route('/students/<int:id>', methods=['GET'])** : Affichage d'un étudiant en passant son **id** par la méthode **GET**··
+**@app.route('/students/<int:id>', methods=['PUT'])** : Mise à jour d'un étudiant par la méthode : **PUT** (testé par Postman)··
+**@app.route('/students/<int:id>', methods=['DELETE'])** : Suppression d'un étudiant par la méthode : **DELETE** (testé par Postman)··
 
 
 
