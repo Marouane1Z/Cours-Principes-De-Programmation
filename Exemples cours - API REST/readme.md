@@ -56,7 +56,7 @@ tab = ("<h2 style='text-align:center;'>Liste des employées</h2>"
          + "<th>Age</th>"
          + "<th>Entreprise</th>"
          + "<th>Role</th>"
-         + "</tr>")```
+         + "</tr>")html```
 
 Cette table s'incrémente en fonction de chaque opération qu'on va définir : (**GET**,**POST**,**PUT**,**DELETE**)
 
