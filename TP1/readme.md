@@ -127,7 +127,7 @@ La classe **Application** a pour objectif de lancer le serveur de déploiement q
 Ensuite, on va créer la classe **MonserviceWeb.java** qui regroupent tous les services web qu'on peut définir. Dans notre TP, on définit les services web représentés par les méthodes suivantes :
 - **conversion** : qui prend en paramètre un nombre réel et renvoie sa multiplication par une constante **0.9**
 - **somme** : qui prend en paramètre deux nombres réels et fait leurs sommes
-- **getEtudiant** : qui permet de renvoyer les infomrations d'un étudiant
+- **getEtudiant** (de type classe **Etudiant**) : qui permet de renvoyer les infomrations d'un étudiant (définit sur la classe **Etudiant**)
 
 c'est ce qui est affiché dans le code en dessous :
 ```
@@ -153,6 +153,54 @@ public class MonserviceWeb {
 
 }
 ```
+Classe **Etudiant.java**
+```
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
+
+@XmlRootElement
+public class Etudiant implements Serializable {
+
+    private int identifiant;
+    private String nom;
+    private double moyenne;
+
+    public Etudiant(){
+    }
+
+    public Etudiant(int identifiant, String nom, double moyenne) {
+        this.identifiant = identifiant;
+        this.nom = nom;
+        this.moyenne = moyenne;
+    }
+
+
+    public int getIdentifiant() {
+        return identifiant;
+    }
+    public void setIdentifiant(int identifiant) {
+        this.identifiant = identifiant;
+    }
+
+
+    public String getNom() {
+        return nom;
+    }
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+
+    public double getMoyenne() {
+        return moyenne;
+    }
+    public void setMoyenne(double moyenne) {
+        this.moyenne = moyenne;
+    }
+
+}
+```
+
 
 À l’aide de certaines annotations, il est également possible de personnaliser les noms exposés dans le fichier WSDL. Cela permet de contrôler la manière dont les méthodes et les paramètres apparaissent dans la description du service web.
 
@@ -171,4 +219,9 @@ Et Après l'éxecution de la classe **Application**, on peut accéder à notre f
 
 <img width="1882" height="917" alt="image" src="https://github.com/user-attachments/assets/f4a32620-e015-4a27-8c9b-844cda25d4bd" />
 
+
+
+
+
+<img width="1860" height="488" alt="image" src="https://github.com/user-attachments/assets/be9b9bb7-d723-45cc-9778-99db6bc062ab" />
 
