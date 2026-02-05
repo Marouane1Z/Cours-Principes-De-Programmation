@@ -2,7 +2,7 @@
 
 <h1 align="center">TP n°1 : RMI et Services Web SOAP</h1>
 
-Ce TP est réalisé par Zaid Marouane (No : 12508678), et suivi par Mr : YOUCEF SAMIR
+Ce TP est réalisé par Zaid Marouane **(No : 12508678)**, et suivi par Mr : YOUCEF SAMIR
 
 L'objectif de ce TP est le développement et déploiement d'une Web Service type : **soap*, 
 
@@ -69,4 +69,58 @@ Pour tester les différentes requêtes, on utilise **SoapUI**, il permet d'envoy
 
 
 Ce rapport présente les étapes d'application d'un exemple ce protocole.
+
+## Notations importantes pour ce TP
+```
+SOAP : Simple Object Access Protocol
+JAX-WS (Java Annotation XML for Web Service)
+JAXB (Java Architecture XML Building)
+URL : Uniform Resource Locator
+URN : Uniform Resource Name
+URI : Uniform Resource Identifier ...
+URN+URL = URI
+```
+
+## Technologies et packages utilisés
+- JAVA 8
+- Intellij IDEA
+- Web Sevices SOAP
+- JAX-WS
+- JAXB
+- SoapUI
+
+## Implémentation du web service SOAP
+
+- Préparation de notre environnement Intellij IDEA en créant un projet Java 8:
+  
+<img width="1813" height="627" alt="image" src="https://github.com/user-attachments/assets/df36819f-75bc-4a2b-afe7-ea0e5621c8f4" />
+
+- Définition des classes :
+
+Au niveau du dossier **SRC**, on définit nos classes :
+
+<img width="528" height="157" alt="image" src="https://github.com/user-attachments/assets/c87c519c-0051-4dd4-8730-4f615f0738ac" />
+
+On commence d'accord par la classe **Application**, qui sera la méthode principale : 
+
+```
+import javax.xml.ws.Endpoint;
+
+public class Application {
+
+    public static void main(String[] args) {
+
+        System.out.println("Début de déploiement de mon service");
+        // /?WSDL après l'url : Web Service Definition Language
+        String url = "http://localhost:8888/";
+
+        Endpoint.publish(url, new MonserviceWeb());
+        System.out.println("Le service web est déployé");
+
+    }
+}
+```
+
+La classe **Application** a pour objectif de lancer le serveur de déploiement qui va retourner les élements XML dans l'adresse : **"http://localhost:8888/"**
+
 
