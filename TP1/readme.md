@@ -101,7 +101,7 @@ Au niveau du dossier **SRC**, on définit nos classes :
 
 <img width="528" height="157" alt="image" src="https://github.com/user-attachments/assets/c87c519c-0051-4dd4-8730-4f615f0738ac" />
 
-On commence d'accord par la classe **Application**, qui sera la méthode principale : 
+On commence d'accord par la classe **Application.java**, qui sera la méthode principale : 
 
 ```
 import javax.xml.ws.Endpoint;
@@ -124,3 +124,32 @@ public class Application {
 La classe **Application** a pour objectif de lancer le serveur de déploiement qui va retourner les élements XML dans l'adresse : **"http://localhost:8888/"**
 
 
+Ensuite, on va créer la classe **MonserviceWeb.java** qui regroupent tous les services web qu'on peut définir. Dans notre TP, on définit les services web représentés par les méthodes suivantes :
+- **conversion** : qui prend en paramètre un nombre réel et renvoie sa multiplication par une constante **0.9**
+- **somme** : qui prend en paramètre deux nombres réels et fait leurs sommes
+- **getEtudiant** : qui permet de renvoyer les infomrations d'un étudiant
+
+c'est ce qui est affiché dans le code en dessous :
+```
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+import javax.jws.WebService;
+
+@WebService(targetNamespace = "http://www.polytech.fr")
+public class MonserviceWeb {
+
+    @WebMethod(operationName = "convertir")
+    public double conversion(double mt) {
+        return mt * 0.9;
+    }
+
+    public double somme(@WebParam(name = "parametre1") double a, double b) {
+        return a+b;
+    }
+
+    public Etudiant getEtudiant() {
+        return new Etudiant(1, "Mario", 19);
+    }
+
+}
+```
