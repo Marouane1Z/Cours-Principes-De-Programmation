@@ -1,5 +1,5 @@
 <p align="center">
-  <h1> Ce dépôt regroupe les travaux réalisés dans le cadre du module **Principes de Programmation**. </h1>
+  <h1> Ce dépôt regroupe les travaux réalisés dans le cadre du module Principes de Programmation. </h1>
 </p>
 
 ## Contenu du dépôt
