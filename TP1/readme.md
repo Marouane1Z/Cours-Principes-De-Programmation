@@ -154,6 +154,21 @@ public class MonserviceWeb {
 }
 ```
 
-A l'aide de quelque annotations, On peut aussi manipuler les nominations qui apparaissent au niveau **WSDL**, comme ce qu'on a fait dans : 
-- ```@WebMethod(operationName = "convertir")``` qui affichera
-- ```@WebParam(name = "parametre1")``` qui va afficher les balises de paramètres XML en "parametre1"
+À l’aide de certaines annotations, il est également possible de personnaliser les noms exposés dans le fichier WSDL. Cela permet de contrôler la manière dont les méthodes et les paramètres apparaissent dans la description du service web.
+
+Par exemple :
+
+- ```@WebMethod(operationName = "convertir")``` : permet d’exposer la méthode de conversion dans le **WSDL** sous le nom "convertir"
+
+<img width="377" height="172" alt="image" src="https://github.com/user-attachments/assets/df795154-9ff5-4e3d-ab70-31f329617659" />
+
+- ```@WebParam(name = "parametre1")``` permet de définir le nom des balises XML des paramètres "parametre1"
+
+<img width="711" height="195" alt="image" src="https://github.com/user-attachments/assets/fbfbb226-dc62-4add-8d18-f775f07cca15" />
+
+
+Et Après l'éxecution de la classe **Application**, on peut accéder à notre fichier **WSDL** par : ```http://localhost:8888/?wsdl```
+
+<img width="1882" height="917" alt="image" src="https://github.com/user-attachments/assets/f4a32620-e015-4a27-8c9b-844cda25d4bd" />
+
+
