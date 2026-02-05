@@ -153,3 +153,7 @@ public class MonserviceWeb {
 
 }
 ```
+
+A l'aide de quelque annotations, On peut aussi manipuler les nominations qui apparaissent au niveau **WSDL**, comme ce qu'on a fait dans : 
+- ```@WebMethod(operationName = "convertir")``` qui affichera
+- ```@WebParam(name = "parametre1")``` qui va afficher les balises de paramètres XML en "parametre1"
