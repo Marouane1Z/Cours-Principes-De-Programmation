@@ -99,7 +99,9 @@ URN+URL = URI
 
 Au niveau du dossier **SRC**, on définit nos classes :
 
+<p align="center">
 <img width="528" height="157" alt="image" src="https://github.com/user-attachments/assets/c87c519c-0051-4dd4-8730-4f615f0738ac" />
+</p>
 
 On commence d'accord par la classe **Application.java**, qui sera la méthode principale : 
 
@@ -207,22 +209,28 @@ public class Etudiant implements Serializable {
 Par exemple :
 
 - ```@WebMethod(operationName = "convertir")``` : permet d’exposer la méthode de conversion dans le **WSDL** sous le nom "convertir"
-
+<p align="center">
 <img width="377" height="172" alt="image" src="https://github.com/user-attachments/assets/df795154-9ff5-4e3d-ab70-31f329617659" />
+</p>
 
 - ```@WebParam(name = "parametre1")``` permet de définir le nom des balises XML des paramètres "parametre1"
 
+<p align="center">
 <img width="711" height="195" alt="image" src="https://github.com/user-attachments/assets/fbfbb226-dc62-4add-8d18-f775f07cca15" />
+</p>
+
 
 
 Et Après l'éxecution de la classe **Application**, on peut accéder à notre fichier **WSDL** par : ```http://localhost:8888/?wsdl```
 
+<p align="center">
 <img width="1882" height="917" alt="image" src="https://github.com/user-attachments/assets/f4a32620-e015-4a27-8c9b-844cda25d4bd" />
-
+</p>
 
 Finalement, à l’aide de SoapUI, il est possible de tester et d’exécuter autant d’exemples que souhaité.
 La capture ci-dessous illustre un exemple d’exécution du service web convertir.
 
-
+<p align="center">
 <img width="1860" height="488" alt="image" src="https://github.com/user-attachments/assets/be9b9bb7-d723-45cc-9778-99db6bc062ab" />
+</p>
 
