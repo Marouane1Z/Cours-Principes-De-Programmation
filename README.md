@@ -1,6 +1,9 @@
 <p align="center">
-  <h1> Ce dépôt regroupe les travaux réalisés dans le cadre du module Principes de Programmation. </h1>
+  <h1> Université Sorbonne Paris Nord, Institut Galilée, Master 1 : Informatique </h1>
 </p>
+
+# Ce dépôt regroupe les travaux réalisés dans le cadre du module Principes de Programmation.
+
 
 ## Contenu du dépôt
 
