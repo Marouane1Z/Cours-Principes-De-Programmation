@@ -13,3 +13,7 @@ Pour accéder au rapport de ce TP, dirigez-vous vers le fichier **readme.md** du
 Cette application illustre les principes des **API REST** vu en cours avec **Flask**  
 
 Pour y accéder, dirigez-vous vers le fichier **readme.md** du répertoire : "Cours-Principes-De-Programmation/Exemples cours - API REST/" ou directement : [Rapport API REST](Exemples%20cours%20-%20API%20REST/readme.md)
+
+### Application PHP – Students
+On reprend l'exemple de l'app **students**, on implémente une architecture MVC en PHP
+Pour y accéder, dirigez-vous vers : [Rapport API REST](Exemples%20cours%20-%20API%20REST/php%20app)
