@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────────
+# BACKEND — Spring Boot / Maven
+# ─────────────────────────────────────────────
+autoloc/target/
+autoloc/*.jar
+autoloc/*.war
+
+# Credentials locaux — JAMAIS committer
+autoloc/src/main/resources/application-local.properties
+
+autoloc-frontend/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ─────────────────────────────────────────────
+# FRONTEND — Angular / Node
+# ─────────────────────────────────────────────
+autoloc-front/node_modules/
+autoloc-front/dist/
+autoloc-front/.angular/
+
+# ─────────────────────────────────────────────
+# SYSTÈME
+# ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+
+# Variables d'environnement
+.env
+.env.local
+.env.production
