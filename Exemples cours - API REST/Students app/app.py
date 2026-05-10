@@ -15,11 +15,16 @@ def home():
 
 # activer mode debug pour voir les erreurs et recharger automatiquement le serveur
 
+<<<<<<< HEAD
 #if __name__ == '__main__':
 #    app.run(debug=True)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+=======
+if __name__ == '__main__':
+    app.run(debug=True)
+>>>>>>> b03573a7e90d459182c4762bfbfeb88699b0f6d8
 
 # Endpoint pour lister tous les étudiants ...
 @app.route('/students', methods=['GET'])
@@ -70,5 +75,9 @@ def update_student(id):
 def delete_student(id):
     global students
     students = [s for s in students if s['id']!=id]
+<<<<<<< HEAD
     return jsonify({"message": "etudiant supprimé"}), 200
 
+=======
+    return jsonify({"message": "etudiant supprimé"}), 200
+>>>>>>> b03573a7e90d459182c4762bfbfeb88699b0f6d8
