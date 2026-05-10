@@ -35,3 +35,12 @@ Thumbs.db
 .env
 .env.local
 .env.production
+
+autoloc-frontend-complete/
+autoloc-frontend-complete.zip
+BaremeInfoA2.xlsx
+PaiementMapper.java
+DDAW.pdf
+user.java
+userRole.java
+VehiculeMapper.java
